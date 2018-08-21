@@ -1,0 +1,177 @@
+(c++)orientado a objetos
+java es un lenguaje interpretado(no se compila) por ej lo ejecutabamos con un navegador(si faltaba un ; no tilteaba, lo interpretaba)
+c es un lenguaje compilado, lo que sea cod fuente, va a traducirse a lenguaje de maquina directamente(codigo objeto)
+
+el codevblockspara compilar cvamos a build(la ruedita) (como el f12 en kroum)
+
+
+main=punto de entrada,(1ra funcion que ejecuita el c) archivo det exto plano
+
+
+printf= permite mostrar por consola(equivale al console.log)
+
+(la ruedita es como el crtl+s del java, hay que "compilarlo" sino se trabaja con el mismo archivo objeto y el mismo archivo ejecutable)
+si hay errores en la sintaxis no se puede compilar, tira error y luego si intentamos ejeciutarlo se ejecutara la "version anterior")
+ "\n" es el equivalente del <br> del jabba
+
+*variables*
+cada vez que declaramos una variable tenemos que indicar que tipo de ¿variable¿? es;
+
+*tipo de datos primitivos*	
+los tipos de datos enteros	(int)	(1;9;4)
+los tipos de datos flotantes	(float)	(3,24;5/3; -2;9)
+los tipos de datos caracteres	(char)	('a'; '?'; '4')	 
+( los datos char son unicamente de un caracter, no sirven para guardar nombres)
+los caracteres usan 'x' y las cadenas son las que usan "x" 
+
+ejemplo
+int unNumero;
+
+las variables guardan una cantidad determinada de memoria:
+int=4bytes
+float=4bytes
+char=1byte
+
+el + no sirve para concatenar, se usa la coma(,) 
+
+*mascaras de entrada*
+"un caracter comodin" cada vez que el compilador encuentra una, lo reemplaza por el valor que le di
+
+int   %d (representa un entero, indica el ancho de un dato)
+float %f
+char  %c
+cada vez que necesitemos mostrar el valor de una variable dentro de un mensaje, necesitamos la mascara de entrada
+
+(loool si pongo unNumero="tu mama pendejo"; tira 4206628)
+
+si muestro variables combinadas, al final tengo que ponerlas en el orden en el que las quiero mostrar
+
+printf("El numero entero es: %d\nEl numero flotante es: %f \nEl caracter es: %c",unNumero,unFlotante,unChar);
+
+*las mascaras siempre van con comillas dobles)
+
+scanf(mascara, direccion de memoria de la variable)  (guarda valor en una variable)
+
+scanf("%d", & x ) (devuelve la direccion de la variable x)
+
+*ejemplo*
+int unNumero=78;
+    float unFlotante =3.29;
+    char unChar = 'u';
+
+    printf("direccion de unNumero: %d\nValor: %d", &unNumero, unNumero);
+
+al parecer el "&" se usa para nose que wea
+
+
+*ejemplo2??*
+
+
+ int unNumero;
+    printf("ingrese un numero: ");
+    scanf("%d",&unNumero);
+
+    printf("el numero es: %d",unNumero);
+
+    printf("direccion de unNumero: %p\nValor: %d",&unNumero,unNumero);
+
+
+
+?????(me pide un numero, luego muestra su direccion de memoria y su valor, osea ese numero again)
+
+float unNumero;
+    printf("ingrese un numero: ");
+    scanf("%f",&unFlotante);
+
+    printf("el numero es: %f", unFlotante);
+
+    printf("El numero es: %2.f",unFlotante);
+
+un flotante con 2 decimales
+
+(buffer es aquello que ingresamos, queda en la memoria)
+
+
+fflush(stdin);  (se usa para limpiar el buffer)
+
+
+
+*ejemplo3*
+ float unFlotante;
+    char unChar;
+    printf("ingrese un flotante: ");
+    scanf("%f", &unFlotante);
+
+    printf("Ingrese un caracter: ");
+    fflush(stdin);
+    scanf("%c",&unChar);
+
+    printf("el numero flotante es: %.2f \n",unFlotante);
+
+    printf("El caracter es: %c",unChar);
+
+(pide un flotante un caracter y despues los muestra) 
+
+  float unFlotante;
+    char unChar;
+    float suma;
+    int unEntero;
+
+    printf("ingrese un entero: ");
+    scanf("%d", &unEntero);
+
+    printf("ingrese un flotante: ");
+    scanf("%f", &unFlotante);
+
+
+    suma=unEntero+unFlotante;
+    printf("la suma es: %f",suma);
+
+
+(suma entre flotante y un entero)
+
+
+
+*ejemplo4*
+
+  int unEntero;
+    char unChar;
+    float division;
+    int otroEntero;
+
+    printf("ingrese un entero: ");
+    scanf("%d", &unEntero);
+
+    printf("ingrese un entero: ");
+    scanf("%d", &otroEntero);
+
+
+    division=unEntero/otroEntero;
+    printf("la division es: %f",division);
+
+(division entre dos enteros, pero lo que esta despues de la comilla no se guarda)
+
+hay que agarrar a uno de los 2 hay que convertirlo a flotante, entonces agrego un "(float)" a uno
+
+
+division=(float)unEntero/otroEntero;
+
+castear=convertir de un tipo de dato numerico a otro tipo de dato numerico
+
+
+
+lunes lab 
+martes prog 
+miercoles ingles y mates
+jueves sistema e procesamiento de datos
+viernes mates
+
+sabados (clases de apoyo)
+
+
+
+
+
+
+
+
